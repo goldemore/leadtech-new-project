@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/leadtech-new-project/static/css/main.f822076d.css",
+    "main.js": "/leadtech-new-project/static/js/main.f775b9f6.js",
+    "index.html": "/leadtech-new-project/index.html",
+    "main.f822076d.css.map": "/leadtech-new-project/static/css/main.f822076d.css.map",
+    "main.f775b9f6.js.map": "/leadtech-new-project/static/js/main.f775b9f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f822076d.css",
+    "static/js/main.f775b9f6.js"
+  ]
+}
