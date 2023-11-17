@@ -1,25 +1,41 @@
-import React from 'react'
-import Products from './Products'
+import React, { useEffect, useState } from "react";
+import Products from "./Products";
+import { useDispatch, useSelector } from "react-redux";
+import { getCategoryList, getProductList } from "../action/MainAction";
+import CategoryTitle from "./CategoryTitle";
 
 const Title = () => {
-  return (
-    <div className='title_container'>
-        <div className='title_name'>
-            <span className='active_title_name'>Smartfonlar</span>
-            <span>Notbuklar, personal komputerlər</span>
-            <span>Smartfonlar, planşetlər</span>
-            <span>TV və audio</span>
-            <span>Foto və video</span>
-            <span>Avtomobil texnikası</span>
-            <span>Əyləncə və istirahət</span>
-            <span>Mətbəx  texnikası</span>
-            <span>Printerlər</span>
-            <span>Təmir və tikinti</span>
-            <span>Ofis avadanlıqları</span>
-        </div>
-        <Products/>
-    </div>
-  )
-}
+  const dispatch = useDispatch();
+  const [activeTitle, setActiveTitle] = useState(null); // Состояние для отслеживания активного элемента
 
-export default Title
+  useEffect(() => {
+    dispatch(getCategoryList());
+  }, [dispatch]);
+
+  const categorytList = useSelector((state) => state.Data.categorytList);
+
+  // Функция для обработки клика на заголовке
+  const handleTitleClick = (index) => {
+    setActiveTitle(index);
+  };
+
+  return (
+    <div className="title_container">
+      <div className="title_name">
+        {categorytList.map((data, i) => {
+          return (
+            <CategoryTitle
+              key={i}
+              data={data}
+              isActive={i === activeTitle} 
+              onClick={() => handleTitleClick(i)} 
+            />
+          );
+        })}
+      </div>
+      <Products />
+    </div>
+  );
+};
+
+export default Title;
