@@ -12,7 +12,6 @@ const Home = () => {
     <div>
         <Navbar/>
         <Hero/>
-        {/* <HomeSlide/> */}
         <Category/>
         <Title/>
         <Partners/>
