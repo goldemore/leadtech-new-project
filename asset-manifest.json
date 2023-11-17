@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/leadtech-new-project/static/css/main.f822076d.css",
-    "main.js": "/leadtech-new-project/static/js/main.b186d8a3.js",
+    "main.js": "/leadtech-new-project/static/js/main.af3149c5.js",
     "static/media/laptop-1.png": "/leadtech-new-project/static/media/laptop-1.4c485504a1666a5d7fd9.png",
     "static/media/desktop-1.png": "/leadtech-new-project/static/media/desktop-1.bf231c1ccd4d708c4de6.png",
     "static/media/camera-1.png": "/leadtech-new-project/static/media/camera-1.ef73553d18f6917d54ca.png",
@@ -11,10 +11,10 @@
     "static/media/Hp.png": "/leadtech-new-project/static/media/Hp.81edba72b5eb786d1f0f.png",
     "index.html": "/leadtech-new-project/index.html",
     "main.f822076d.css.map": "/leadtech-new-project/static/css/main.f822076d.css.map",
-    "main.b186d8a3.js.map": "/leadtech-new-project/static/js/main.b186d8a3.js.map"
+    "main.af3149c5.js.map": "/leadtech-new-project/static/js/main.af3149c5.js.map"
   },
   "entrypoints": [
     "static/css/main.f822076d.css",
-    "static/js/main.b186d8a3.js"
+    "static/js/main.af3149c5.js"
   ]
 }
